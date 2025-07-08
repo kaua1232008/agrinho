@@ -5,7 +5,41 @@ body {
   background-color: #f2fbe0;
   color: #333;
 }
+/* Estilo geral para os botões */
+.botao-rolar {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
 
+/* Efeito ao passar o mouse */
+.botao-rolar:hover {
+  background-color: #45a049; /* Tom mais escuro */
+  transform: scale(1.05); /* Leve aumento */
+}
+
+/* Estilo específico para o botão de subir */
+.botao-subir {
+  position: fixed;
+  bottom: 80px; /* Posicionado acima do botão de descer */
+  right: 20px;
+  display: none; /* Inicialmente escondido, pode ser exibido via JS */
+  z-index: 1000;
+}
+
+/* Estilo específico para o botão de descer */
+.botao-descer {
+  position: fixed;
+  bottom: 20px; /* Posicionado na parte inferior da tela */
+  right: 20px;
+  display: none; /* Inicialmente escondido, pode ser exibido via JS */
+  z-index: 1000;
+}
 /* Cabeçalho */
 header {
   background-color: #4CAF50;
